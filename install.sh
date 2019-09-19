@@ -36,4 +36,4 @@ if ! sh $WORKDIR/hyper/install.sh $OS; then
 fi
 
 rm -rf $WORKDIR
-exit 0 && exec zsh
+exec zsh && exit 0 
