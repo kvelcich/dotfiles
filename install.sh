@@ -30,6 +30,10 @@ printf "\nConfiguring zsh...\n"
 if ! sh $WORKDIR/zsh/install.sh $OS; then
     die
 fi
+printf "\nConfiguring hyper...\n"
+if ! sh $WORKDIR/hyper/install.sh $OS; then
+    die
+fi
 
 rm -rf $WORKDIR
 exit 0 && exec zsh
