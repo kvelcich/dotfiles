@@ -19,7 +19,7 @@ if [ ! $? -eq 0 ]; then
 fi
 
 # Add WSL improvements if using Windows
-if grep wsl <<< $3; then
+if grep wsl <<< $1; then
     cat $(dirname $0)/wsl.setup >> $HOME/.zshrc
 fi
 
