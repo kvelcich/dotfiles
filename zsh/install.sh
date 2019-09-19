@@ -18,8 +18,8 @@ if [ ! $? -eq 0 ]; then
     exit 1
 fi
 
-# Add WSL improvements if using Windows
-if grep wsl <<< $1; then
+# Add WSL improvements if using Windows Subsystem for Linux
+if grep -q wsl <<< $1; then
     cat $(dirname $0)/wsl.setup >> $HOME/.zshrc
 fi
 
@@ -30,8 +30,5 @@ if [ ! $? -eq 0 ]; then
     printf "Error downloading antigen plugin manager." 1>&2
     exit 1
 fi
-
-# Now re-source zsh, so we can download plugins
-exec zsh
 
 exit 0
