@@ -1,0 +1,2 @@
+vim nice
+:wq
