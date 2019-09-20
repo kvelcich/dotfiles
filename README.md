@@ -16,6 +16,14 @@ This will install the dotfiles, plugins, and configurations for:
   * [Z shell (zsh)](http://zsh.sourceforge.net/)
   * [Hyper](https://hyper.is/)
 
+#### Manual Installation
+All resources are found within their corresponding directories within this 
+repository as well as an installation script. 
+
+Be aware that some installation scripts expect the operating system as the
+first argument, so be sure to add the appropriate OS as a command line 
+argument, i.e. `$ ./install.sh arch-wsl`.
+
 ### Supported Operating Systems
 
 As far as I'm aware this should work for Linux, macOS, and Windows Subsystem for Linux (WSL). 
