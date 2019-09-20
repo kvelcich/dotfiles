@@ -1,9 +1,16 @@
+" Use Vim settings rather than Vi "
+    set nocompatible
+
 " Basic Appearance "
     syntax on   " Syntax Highlighting
     set nu      " Line Numbers
 
 " Tab/Spacing "
     set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" Auto indent pasted text "
+    nnoremap p p=`]<C-o>
+    nnoremap P P=`]<C-o>
 
 " Easy Escape"
     imap jk <Esc>

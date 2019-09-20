@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Ensure vim is installed
 if [ ! -x "$(command -v vim)" ]; then
 	echo "vim isn't installed" 1>&2

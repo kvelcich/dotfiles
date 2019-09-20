@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Ensure zsh is installed
 if [ ! -x "$(command -v zsh)" ]; then
 	printf "zsh isn't installed" 1>&2
