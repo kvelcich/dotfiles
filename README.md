@@ -11,10 +11,10 @@ To install run the following command:
 sh -c "`curl -fsSL https://raw.githubusercontent.com/kvelcich/dotfiles/master/install.sh`"
 ```
 
-   This will install the dotfiles, plugins, and configurations for:
-  * [Vim](https://www.vim.org/)
-  * [Z shell (zsh)](http://zsh.sourceforge.net/)
-  * [Hyper](https://hyper.is/)
+    This will install the dotfiles, plugins, and configurations for:
+    * [Vim](https://www.vim.org/)
+    * [Z shell (zsh)](http://zsh.sourceforge.net/)
+    * [Hyper](https://hyper.is/)
 
 ### Supported Operating Systems
 
