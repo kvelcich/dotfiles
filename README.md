@@ -18,8 +18,7 @@ This will install the dotfiles, plugins, and configurations for:
 
 ### Supported Operating Systems
 
-As far as I'm aware this should work for all distrobutions of Linux as well as
-macOS and Windows Subsystem for Linux (WSL). 
+As far as I'm aware this should work for Linux, macOS, and Windows Subsystem for Linux (WSL). 
 
 As the configurations grow and automation becomes more complex, the 
 compatability may become less stable. Currently this has been tested on the 
