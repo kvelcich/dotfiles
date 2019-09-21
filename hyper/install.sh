@@ -1,15 +1,10 @@
 #!/bin/sh
 
-# Ensure zsh is installed
-if [ ! -x "$(command -v hyper)" ]; then
-	printf "zsh isn't installed" 1>&2
-	exit 1
-fi
-
 # Determine directory to place resources in
 HYPERDIR=$HOME
 if grep -q wsl <<< $1; then
-    HYPERDIR=/mnt/c/Users/kvel
+    # TODO: automatically figure out user name here
+    HYPERDIR=/mnt/c/Users/kvel/AppData/Roaming/Hyper
 fi
 
 # Download hyper-kevin colorscheme (currently just as a local plugin)

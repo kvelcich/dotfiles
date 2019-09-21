@@ -1,0 +1,6 @@
+zsh:
+  * https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
+vim:
+  * goyo
+  * https://vimawesome.com/plugin/file-header
