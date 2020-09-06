@@ -19,7 +19,7 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 
 # Downloading necessary files
-git clone --depth=1 git@github.com:kvelcich/dotfiles.git $WORKDIR
+git clone --depth=1 https://github.com/kvelcich/dotfiles.git $WORKDIR
 
 # Configuration
 printf "\nConfiguring vim...\n"
