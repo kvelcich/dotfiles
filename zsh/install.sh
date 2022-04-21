@@ -21,14 +21,8 @@ if [ ! $? -eq 0 ]; then
 fi
 
 # Add WSL improvements if using Windows Subsystem for Linux
-printf "Checking OS Version..."
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    printf "Linux detected - Checking for WSL..."
-    OS="$(awk -F= '$1=="ID" { print $2 ;}' /etc/os-release)"
-    if grep -q Microsoft /proc/version; then
-        printf "WSL Detected"
-        cat $(dirname $0)/wsl.setup >> $HOME/.zshrc
-    fi
+if [[ "$OSTYPE" == "linux-gnu" ]] && grep -qi microsoft /proc/version; then     
+    cat $(dirname $0)/wsl.setup >> $HOME/.zshrc                                                     
 fi
 
 # Install antigen plugin manager for zsh 
