@@ -19,17 +19,17 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then
 fi
 
 # Downloading necessary files
-git clone --depth=1 https://github.com/kvelcich/dotfiles.git $WORKDIR
+# git clone --depth=1 https://github.com/kvelcich/dotfiles.git $WORKDIR
 
 # Configuration
-printf "\nConfiguring vim...\n"
-if ! sh $WORKDIR/vim/install.sh $OS; then
+# printf "\nConfiguring vim...\n"
+# if ! sh $WORKDIR/vim/install.sh $OS; then
     die
-fi
-printf "\nConfiguring zsh...\n"
-if ! sh $WORKDIR/zsh/install.sh $OS; then
+# fi
+# printf "\nConfiguring zsh...\n"
+# if ! sh $WORKDIR/zsh/install.sh $OS; then
     die
-fi
+# fi
 printf "\nConfiguring hyper...\n"
 if ! sh $WORKDIR/hyper/install.sh $OS; then
     die
