@@ -11,7 +11,7 @@ fi
 mkdir -p $HYPERDIR/.hyper_plugins/local
 rm -rf $HYPERDIR/.hyper_plugins/local/hyper-kev
 git clone https://github.com/kvelcich/hyper-kev.git \
-    $HYPERDIR/.hyper_plugins/local/
+    $HYPERDIR/.hyper_plugins/local/hyper-kev
 
 # Copying hyper resources
 cp $(dirname $0)/.hyper.js $HYPERDIR/.
