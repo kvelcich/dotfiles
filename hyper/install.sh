@@ -4,7 +4,7 @@
 HYPERDIR=$HOME
 if grep -q wsl <<< $1; then
     # TODO: assumes user is installed to C drive
-    WIN_USER=$(powershell.exe '$env:UserName'
+    WIN_USER=$(powershell.exe '$env:UserName')
     HYPERDIR="/mnt/c/${WIN_USER::-1}/AppData/Roaming/Hyper"
 fi
 
