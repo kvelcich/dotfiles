@@ -1,3 +1,2 @@
 # Add specific improvements for WSL
 source $HOME/.zsh/wsl.rc
-cd ~
