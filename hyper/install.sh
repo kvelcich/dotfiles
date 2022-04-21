@@ -14,6 +14,6 @@ git clone https://github.com/kvelcich/hyper-kev.git \
     $HYPERDIR/.hyper_plugins/local/hyper-kev
 
 # Copying hyper resources
-cp $(dirname $0)/.hyper.js $HYPERDIR/.
+cp -v $(dirname $0)/.hyper.js $HYPERDIR/.hyper.js
 
 # TODO: Do something about installing the fonts
