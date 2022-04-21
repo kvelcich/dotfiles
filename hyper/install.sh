@@ -4,7 +4,7 @@
 HYPERDIR=$HOME
 if [[ "$OSTYPE" == "linux-gnu" ]] && grep -qi microsoft /proc/version; then     
     WIN_USER=$(powershell.exe '$env:UserName')
-    HYPERDIR="/mnt/c/${WIN_USER::-1}/AppData/Roaming/Hyper"
+    HYPERDIR="/mnt/c/Users/${WIN_USER::-1}/AppData/Roaming/Hyper"
 fi
 
 # Download hyper-kev colorscheme (currently just as a local plugin)
