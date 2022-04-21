@@ -8,16 +8,6 @@ die() {
     exit 1
 }
 
-# Determining OS Environment
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    OS="macOS"
-elif [[ "$OSTYPE" == "linux-gnu" ]]; then
-    OS="$(awk -F= '$1=="ID" { print $2 ;}' /etc/os-release)"
-    if grep -q Microsoft /proc/version; then
-        OS="$OS-wsl"
-    fi
-fi
-
 # Downloading necessary files
 git clone --depth=1 https://github.com/kvelcich/dotfiles.git $WORKDIR
 
@@ -31,7 +21,7 @@ if ! sh $WORKDIR/zsh/install.sh; then
     die
 fi
 printf "\nConfiguring hyper...\n"
-if ! sh $WORKDIR/hyper/install.sh $OS; then
+if ! sh $WORKDIR/hyper/install.sh; then
     die
 fi
 
